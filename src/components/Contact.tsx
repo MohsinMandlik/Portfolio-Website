@@ -1,5 +1,6 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
 import "./styles/Contact.css";
+import { personalInfo, socialLinks } from "../data/portfolio";
 
 const Contact = () => {
   return (
@@ -10,46 +11,40 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a
+                href={`mailto:${personalInfo.email}`}
+                data-cursor="disable"
+              >
+                {personalInfo.email}
               </a>
             </p>
-            <h4>Phone</h4>
-            <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
-              </a>
-            </p>
+            <h4>Specialization</h4>
+            <p>{personalInfo.specialization}</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href={socialLinks.github}
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href={socialLinks.linkedin}
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href="https://x.com"
+              href={socialLinks.instagram}
               target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
@@ -58,10 +53,10 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
+              Designed and Developed <br /> by <span>{personalInfo.name}</span>
             </h2>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> {personalInfo.copyrightYear}
             </h5>
           </div>
         </div>

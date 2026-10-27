@@ -85,6 +85,43 @@
 .work-info > p {
   width: 90%;
 }
+.work-desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7c6c6 !important;
+  margin-top: 10px !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.3px;
+  width: 95% !important;
+}
+.work-links-bar {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.work-btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.work-btn-link:hover {
+  background: #aa42ff;
+  border-color: #aa42ff;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(170, 66, 255, 0.45);
+  transform: translateY(-2px);
+}
 .work-image {
   display: flex;
   width: 100%;
